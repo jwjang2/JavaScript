@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		Object.prototype.contain = function(needle) {
+			for( var name in this) {
+				if(this[name]) {
+					return true;
+				}
+			}
+			return false;
+		};
+
+		var o = ['abc','def','gef'];
+		var a = {'nm':"jjw",'age':49,'fun1':function() {}};
+
+		for(idx in a) {
+			console.log(idx);
+		}
+
+
+
+	</script>
+
+</body>
+</html>

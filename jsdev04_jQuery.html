@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"/>
+	<script type="text/javascript" src="jQuery351.js"></script>
+</head>
+<body>
+   <ul id="list" style="Color:blue">
+   		<li>짜장면</li>
+   		<li>삼겹살</li>
+   		<li>라면</li>
+   </ul>
+   <input type="button" value="음식변경" id="chg_btn">
+   <script type="text/javascript">
+   		$('#chg_btn').click(function() {
+   			$('#list li').text('짬뽕');
+   		})
+   </script>   		
+   <input type="button" value="기존으로" id="org_btn">
+   <script type="text/javascript">
+   		$('#org_btn').click(function() {
+   			$('#list li').text('동파육');
+   		})   	
+   </script>   
+</body>
+</html>

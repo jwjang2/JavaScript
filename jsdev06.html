@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log('start');
+
+		// var arr = new Array("abc","def","123","ab3","qqq");
+
+		// function getRandArry(ar){
+		// 	var idx = Math.floor(ar.length*Math.random());
+		// 	return ar[idx];
+		// }
+		// console.log(getRandArry(arr));
+
+		Array.prototype.rand = function() {
+			var idx = Math.floor(this.length*Math.random());
+			return this[idx];
+		};
+		var arr = new Array("abc","def","123","ab3","qqq");
+		console.log('rand = ' + arr.rand());
+//		console.log('arr.keys()');
+		console.log('arr.keys()',Object.keys(arr));
+		console.log('arr.toString()',arr.toString());
+//		console.log('arr.keys()',arr.toString());
+
+// /*
+// 		function fun1(nm) {
+// 			var iv1 = nm;
+// //			return iv1;
+// 		}
+// */
+
+// 		function fun1() {
+//     		var pro1 = 'nm';
+// //    		var pro2 = 'age';
+
+    	
+//     		function sub_fun1() {
+//     			console.log('call sub_fun1()');
+//     		}
+//     		function sub_fun2() {
+//     			console.log('call sub_fun2()');
+//     		}
+    		
+//     	}
+
+
+//     	var oj = new fun1();
+//     	console.log(fun1.pro1);
+//     	console.log(oj.pro1);
+
+/*
+		var f1 = fun1('aaa');
+		var f2 = fun1('bbb');
+		console.log('f1 = ' + f1);
+		console.log('f2 = ' + f2);
+
+	//	var f0 = new fun1('ccc');
+	//	console.log('f0 = ' + f0);
+//		console.log('f0 = ' + f0.fun1('ddd'));
+
+/*
+		var aFun = [];
+
+		for(var i=0; i<5; i++) {
+			aFun[i] = function(id) {
+				return function () {
+					return id;
+				}
+			}(i);
+		}
+*/		
+/*
+		for(var i=0; i<5; i++) {
+			aFun[i] = function (i) {
+				return i;
+			};
+		}
+*/
+/*
+		var j = 0;
+    	for (var idx in aFun) {
+    		console.log('call = '+ j + ' i= ' + aFun[idx]());
+    		j++;
+		}
+*/		
+//		console.log('end');
+	</script>
+</body>
+</html>
