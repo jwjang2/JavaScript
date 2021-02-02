@@ -8,12 +8,13 @@
 		}
 
 		function LinksSetColor(color){
-			var aList = document.querySelectorAll('a');
-			var i = 0;
-			while(i < aList.length) {
-				aList[i].style.color = color;
-				i = i + 1;
-			}
+			// var aList = document.querySelectorAll('a');
+			// var i = 0;
+			// while(i < aList.length) {
+			// 	aList[i].style.color = color;
+			// 	i = i + 1;
+			// }
+			$('a').css('color',color);
 		}
 
 		function nigthDaySetColor(self){
